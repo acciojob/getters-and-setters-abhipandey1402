@@ -1,15 +1,15 @@
 //complete this code
 class Person {
 	constructor(name, age){
-		this.name = name;
-		this.age = age;
+		this._name = name;
+		this._age = age;
 	}
 	get getName(){
-		return this.name;
+		return this._name;
 	}
 
 	set setAge(age){
-		this.age = age;
+		this._age = age;
 	}
 
 	
@@ -17,27 +17,27 @@ class Person {
 
 class Student extends Person {
 	study(){
-		console.log(`${this.name} is studying`);
+		console.log(`${this._name} is studying`);
 	}
 }
 
 class Teacher extends Person {
 	teach(){
-		console.log(`${this.name} is teaching`);
+		console.log(`${this._name} is teaching`);
 	}
 }
 
 
 const person = new Person("John", 25);
-console.log(person.name);
+console.log(person._name);
 person.age = 30;
 
 const student = new Student("Jane", 20);
-console.log(student.name);
+console.log(student._name);
 student.study();
 
 const teacher = new Teacher("Bob", 35);
-console.log(teacher.name);
+console.log(teacher._name);
 teacher.teach();
 
 // Do not change the code below this line
