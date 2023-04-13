@@ -32,7 +32,7 @@ const person = new Person("John", 25);
 console.log(person._name);
 person.age = 30;
 
-const student = new Student("Jane", 20);
+const student = new Student("John", 30);
 console.log(student._name);
 student.study();
 
